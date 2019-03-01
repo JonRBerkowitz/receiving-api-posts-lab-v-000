@@ -15,6 +15,7 @@
 <% end %>
 
 <h2 id="productName"></h2>
+<p id="productDescription"></p>
 
 <script type="text/javascript" charset="utf-8">
 $(function () {
@@ -28,6 +29,8 @@ $(function () {
     posting.done(function(data) {
       let product = data;
       $("#productName").text(product["name"]);
+      $("#productDescription").text(product["description"]);
+
     });
   });
 });

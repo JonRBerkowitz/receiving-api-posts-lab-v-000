@@ -1748,3 +1748,14 @@ Processing by ProductsController#create as HTML
   [1m[35m (2.6ms)[0m  commit transaction
 [active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.09ms)
 Completed 201 Created in 22ms (Views: 12.2ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/products" for 73.123.199.176 at 2019-03-01 17:43:37 +0000
+Cannot render console from 73.123.199.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/FpOBdLEskaQLg7DP9ysjuQHADOlnzqrlmTUgPX4XM/UGLbyszYLMuId/Ky8djHdohWxOLsaVjCvCbntL7E5Dg==", "product"=>{"name"=>"HDMI", "price"=>"3", "description"=>"tretreteter", "inventory"=>"1"}, "commit"=>"submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "description", "inventory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "HDMI"], ["description", "tretreteter"], ["inventory", 1], ["price", 3], ["created_at", "2019-03-01 17:43:37.923539"], ["updated_at", "2019-03-01 17:43:37.923539"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.07ms)
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 2.8ms)
